@@ -1,6 +1,8 @@
 # Reports 
 utils/reports/*
 mochawesome-report
+.nyc_output
+coverage
 
 # Spell checker
 .vscode
