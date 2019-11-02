@@ -1,0 +1,46 @@
+{
+  "name": "module5_unit_tests",
+  "version": "1.0.0",
+  "description": "UnitTestingFrameworks.Build Tools",
+  "main": "myCalculator.js",
+
+  "scripts": {
+    "test": "mocha --config ./test/config/mocha.config.js",
+    "coverage": "nyc npm test"
+  },
+
+  "nyc": {
+    "all": true,
+    "include": [
+      "app/**/*.js"
+    ],
+    "excludes": [
+      "**/*.spec.js"
+    ],
+    "reporter": [
+      "html",
+      "text"
+    ]
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TSemenyako/ATM8-M5_UnitTests.git"
+  },
+
+  "author": "Tsemenyako",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TSemenyako/ATM8-M5_UnitTests/issues"
+  },
+
+  "homepage": "https://github.com/TSemenyako/ATM8-M5_UnitTests#readme",
+
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-spies": "^1.0.0",
+    "mocha": "^6.2.2",
+    "mochawesome": "^4.1.0",
+    "nyc": "^14.1.1"
+  }
+}
